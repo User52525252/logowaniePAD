@@ -95,6 +95,7 @@
             this.button1.TabIndex = 5;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox2
             // 
@@ -112,9 +113,10 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(83, 255);
+            this.pictureBox1.Image = global::logowaniePAD.Properties.Resources._1;
+            this.pictureBox1.Location = new System.Drawing.Point(83, 262);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.Size = new System.Drawing.Size(100, 31);
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
@@ -124,9 +126,9 @@
             this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
             this.label5.Location = new System.Drawing.Point(189, 308);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(13, 15);
+            this.label5.Size = new System.Drawing.Size(69, 15);
             this.label5.TabIndex = 9;
-            this.label5.Text = "0";
+            this.label5.Text = "Losuj Nowy";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // Form1
@@ -146,6 +148,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
