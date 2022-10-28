@@ -22,6 +22,7 @@ namespace logowaniePAD
                 (logowaniePAD.Properties.Resources._6, "aaa"),
                 (logowaniePAD.Properties.Resources._7, "aaa"),
 
+
         };
 
 
