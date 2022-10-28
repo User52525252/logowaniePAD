@@ -33,8 +33,7 @@ namespace logowaniePAD
             Random random = new Random();
             var los = random.Next(imagesWithCodes.Length);
             pictureBox1.Image = imagesWithCodes[los].Item1;
-            var correctimageCode = los;
-           
+            var correctimageCode = los;           
         }
       
 
