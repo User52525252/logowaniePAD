@@ -1,4 +1,5 @@
 using logowaniePAD.Properties;
+using Microsoft.VisualBasic.Logging;
 using System.Diagnostics;
 using System.Linq.Expressions;
 
@@ -10,17 +11,17 @@ namespace logowaniePAD
         {
             InitializeComponent();
         }
-        string odp; // zmiene potrzebne do weryfikacji capcha
-        int img;
+        string cpth;
+
         (Image, string)[] imagesWithCodes =
         {
-                (logowaniePAD.Properties.Resources._1, "aaa"),
-                (logowaniePAD.Properties.Resources._2, "aaa"),
-                (logowaniePAD.Properties.Resources._3, "aaa"),
-                (logowaniePAD.Properties.Resources._4, "aaa"),
-                (logowaniePAD.Properties.Resources._5, "aaa"),
-                (logowaniePAD.Properties.Resources._6, "aaa"),
-                (logowaniePAD.Properties.Resources._7, "aea"),
+                (logowaniePAD.Properties.Resources._1, "mxyxw"),
+                (logowaniePAD.Properties.Resources._2, "b5nmm"),
+                (logowaniePAD.Properties.Resources._3, "74853"),
+                (logowaniePAD.Properties.Resources._4, "cg5dd"),
+                (logowaniePAD.Properties.Resources._5, "x3deb"),
+                (logowaniePAD.Properties.Resources._6, "befhd"),
+                (logowaniePAD.Properties.Resources._7, "c7gb3"),
 
 
         };
@@ -33,7 +34,8 @@ namespace logowaniePAD
             Random random = new Random();
             var los = random.Next(imagesWithCodes.Length);
             pictureBox1.Image = imagesWithCodes[los].Item1;
-            var correctimageCode = los;           
+            var correctimageCode = los;
+            cpth =imagesWithCodes[los].Item2;
         }
       
 
@@ -45,6 +47,22 @@ namespace logowaniePAD
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
+            string has = "Qwerty1@34";
+            string login = "admin";
+            if((textBox1.Text==login ) && (textBox2.Text == has) && textBox3.Text == cpth)
+            {
+                var frm = new Form2();
+                frm.Location = this.Location;
+                frm.StartPosition = FormStartPosition.Manual;
+                frm.FormClosing += delegate { this.Show(); };
+                frm.Show();
+                this.Hide();
+            }
+            else
+            {
+                capcha();
+            }
             
 
         }
