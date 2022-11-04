@@ -20,7 +20,7 @@ namespace logowaniePAD
                 (logowaniePAD.Properties.Resources._4, "aaa"),
                 (logowaniePAD.Properties.Resources._5, "aaa"),
                 (logowaniePAD.Properties.Resources._6, "aaa"),
-                (logowaniePAD.Properties.Resources._7, "aaa"),
+                (logowaniePAD.Properties.Resources._7, "aea"),
 
 
         };
